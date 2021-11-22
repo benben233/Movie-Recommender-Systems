@@ -1,4 +1,7 @@
 from timeit import timeit
 
-b = timeit("c.apply(lambda x: [i['name'] for i in x] if isinstance(x, list) else [])",
-                  setup='from __main__ import c', number=1)
+# data = "credits"
+# s = "s = pd.DataFrame(np.concatenate(credits['keywords'])).value_counts()"
+# b = timeit(s, setup='from __main__ import pd,np,'+data, number=1)
+
+timeit('a.append(i)', setup='a=[];i=0')
